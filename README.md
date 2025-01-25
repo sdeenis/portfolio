@@ -18,6 +18,7 @@ Porfolio creado con la intención de mostrar mis proyectos y adquirir soltura co
 - [Edición de imágenes en shots.so](https://shots.so/)
 - [Compresión de imágenes en Squoosh](https://squoosh.app/)
 
-
+## 👀 Vista previa
+![Vista previa del porfolio](/src/assets/preview.png)
 
 
