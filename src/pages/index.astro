@@ -9,10 +9,14 @@ import Projects from "../components/Projects.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
 import Code from "../components/icons/Code.astro";
+import ProfileCheck from "../components/icons/ProfileCheck.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
-<Layout title="Porfolio de Denis Savoiu | Desarrollador y Programador Web"
-	description="Denis Savoiu es un desarrollador web recién graduado de Madrid, España. Conoce más sobre él y su trabajo en su porfolio.">
+<Layout
+	title="Porfolio de Denis Savoiu | Desarrollador y Programador Web"
+	description="Denis Savoiu es un desarrollador web recién graduado de Madrid, España. Conoce más sobre él y su trabajo en su porfolio."
+>
 	<main class="px-4">
 		<SectionContainer class="py-44 pb-32">
 			<!-- <img
@@ -24,33 +28,39 @@ import Code from "../components/icons/Code.astro";
 				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
 			>
 				Hola!, soy Denis <a
-					href="https://www.google.es"
-					class="flex justify-center items-center"
+					href="https://www.linkedin.es"
+					class="flex items-center transition md:justify-center md:hover:scale-105"
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<Badge>Disponible para trabajar</Badge>
 				</a>
-				<!-- poner linkedin en el <a> -->
 			</h1>
 			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-				<span class="text-yellow-200/90">Desarrollador Web recién graduado.</span> <span class="text-red-200/90">De Madrid, España 🇪🇸.<br></span>
-		 		<span class="opacity-75">Me destaco en mi capacidad de aprendizaje, mi pasión por la
-				tecnología y mi compromiso con el trabajo bien hecho.</span>
+				<span class="text-yellow-200/90"
+					>Desarrollador Web recién graduado.</span
+				>
+				<span class="text-red-200/90">De Madrid, España 🇪🇸.<br /></span>
+				<span class="opacity-75"
+					>Me destaco en mi capacidad de aprendizaje, mi pasión por la
+					tecnología y mi compromiso con el trabajo bien hecho.</span
+				>
 			</h2>
 
 			<nav class="flex gap-4 mt-8 flex-wrap">
-					<SocialPill href="https://www.linkedin.com">
-						<LinkedIn class = "size-4 md:size-6" />
-						LinkedIn
-					</SocialPill>
-					<SocialPill href="https://www.github.com">
-						<GitHub class = "size-4 md:size-6" />
-						Github
-					</SocialPill>
-					<SocialPill href="mailto:denisioansavoiu@gmail.com">
-						<Mail class = "size-4 md:size-6" />
-						denisioansavoiu@gmail.com
-					</SocialPill>
-			</nav>	
+				<SocialPill href="https://www.linkedin.com">
+					<LinkedIn class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://www.github.com">
+					<GitHub class="size-4 md:size-6" />
+					Github
+				</SocialPill>
+				<SocialPill href="mailto:denisioansavoiu@gmail.com">
+					<Mail class="size-4 md:size-6" />
+					denisioansavoiu@gmail.com
+				</SocialPill>
+			</nav>
 		</SectionContainer>
 
 		<SectionContainer id="proyectos">
@@ -59,6 +69,14 @@ import Code from "../components/icons/Code.astro";
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<ProfileCheck class="size-7" />
+				Sobre mí
+			</h2>
+			<AboutMe />
 		</SectionContainer>
 	</main>
 </Layout>
